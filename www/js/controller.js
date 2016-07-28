@@ -1,5 +1,6 @@
-app.controller('facebookCtrl',function($scope){
+app.controller('fbCtrl',function($scope,$window,$cordovaInAppBrowser){
     
     
+
     
 });
