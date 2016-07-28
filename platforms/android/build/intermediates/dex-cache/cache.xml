@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/vielsoft-dev-6/Desktop/IONIC-Facebook-InAppBrowser-APP/platforms/android/build/intermediates/exploded-aar/android/CordovaLib/unspecified/debug/jars/classes.jar"
+        jumboMode="false"
+        revision="24.0.0"
+        sha1="5273b33229a87af0ed9cb64cdb775e8bfdc2e99a">
+        <dex dex="/home/vielsoft-dev-6/Desktop/IONIC-Facebook-InAppBrowser-APP/platforms/android/build/intermediates/pre-dexed/debug/CordovaLib-unspecified-debug_fad4e525390f67f4006c401990ba9781c86c9fd9.jar" />
+    </item>
+
+</items>
