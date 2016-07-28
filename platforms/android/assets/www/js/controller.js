@@ -1,4 +1,4 @@
-app.controller('fbCtrl',function($scope,$window,$cordovaInAppBrowser,$timeout,$ionicLoading){
+app.controller('fbCtrl',function($scope,$window,$cordovaInAppBrowser,$timeout,$ionicLoading,$ionicPopup){
     
     
     $scope.gitChael = function(){
@@ -8,20 +8,27 @@ app.controller('fbCtrl',function($scope,$window,$cordovaInAppBrowser,$timeout,$i
     
     
     $scope.fbDirect = function(){
-       $ionicLoading.show({template:"Connecting facebook . . ."});
+        
+            
+            $scope.mypopUp = $ionicPopup.confirm({
+                title: 'Ionic Facebook',
+                template: 'Do you want to proceed to Facebook?'
+            });
+            
 
 
-            $timeout(function(){
-                                $ionicLoading.hide();
-             },10000);
+             $scope.mypopUp.then(function(res){
+                 
+                 if(res){
+                     console.info("Redirecting");
+                     $window.open("https://m.facebook.com/",'_self',"location=no"); 
+                 }
+                 else{
+                     console.info("Not Redirecting");
+                     
+                 }
+             })
 
-       
-                       
-            $window.open("https://m.facebook.com/",'_self',"location=no");  
-                        
-
-                    
-                    
  
     };
     
