@@ -9,16 +9,20 @@ app.controller('fbCtrl',function($scope,$window,$cordovaInAppBrowser,$timeout,$i
     
     $scope.fbDirect = function(){
        $ionicLoading.show({template:"Connecting facebook . . ."});
-       
-       $timeout(function(){
-       
-                        $ionicLoading.hide();
-               
-        },1000);
-        
 
-        $window.open("https://m.facebook.com/",'_self',"location=no");  
-        
+
+            $timeout(function(){
+                                $ionicLoading.hide();
+             },10000);
+
+       
+                       
+            $window.open("https://m.facebook.com/",'_self',"location=no");  
+                        
+
+                    
+                    
+ 
     };
     
 
