@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+    
+    <script src="lib/ngCordova/dist/ng-cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+    
+    <script src="js/controller.js"></script>
+    
+  </head>
+  <body ng-app="facebookapp"  ng-controller="fbCtrl" class="platform-android platform-cordova platform-webview">
+   
+  <div class=" bar bar-header bar-positive">
+      <div class="h1 title"><i style="font-size: 21px;" class="ion-ionic"></i> Facebook</div>
+  </div>
+  
+  
+  <ion-content class="has-header" >
+    
+    
+          <div class="list card">
+
+          <div class="item item-avatar">
+            <img src="img/ionic-me.png">
+            <h2>Ionic Facebook </h2>
+            <p>Experimental Application</p>
+          </div>
+
+          <div class="item item-body">
+            <img  src="img/ionic.png" idth="20"height="20"> About
+            
+            <p>
+              This application is a not an official Facebook or Phishing app. 
+              This app is an experimenatal project built using Pure Ionic Framework 
+              integrated by Cordova InAppBrowser Plugin.</br>
+              
+              </br>
+              You are free to use this app and securely no personal data is stolen on your device.
+              
+            </p>
+            <p>
+              <a href="#" class="subdued">7.5 k Like</a>
+              <a href="#" class="subdued">5.2 k Comments</a>
+            </p>
+        </div>
+
+      </div>
+      
+      <div align="center">
+        <button class="button button-positive" ng-click="fbDirect()">Facebook</button>
+      </div>
+  </ion-content>
+  
+  
+   <div class=" bar bar-footer bar-positive">
+     <div style="font-size:10px;" class="title">All Rights Reserved &copy; <span ng-click="gitChael()"> <u>https://github.com/michaeljymsgutierrez</u></span> </div>
+   </div>
+
+
+  </body>
+</html>
